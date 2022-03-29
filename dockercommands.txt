@@ -25,3 +25,4 @@ docker container kill
 docker contianer rm "contianer name "( should first stop container )
 docker container rm -f (fource) "container name"
 docker image rm "image name"
+end
