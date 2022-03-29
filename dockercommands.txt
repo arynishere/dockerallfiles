@@ -1,0 +1,27 @@
+Docker commands :
+docker image pull "image name" or "image name : tag ( version )"
+docker image push "image name" or "image name:tag( version )"
+if you have praivet registery you should use this commands :
+docker image pull/push "registery name : #port "image name" : "With or without tag"
+ctrl + p + q = exit bash
+docker container run -itd (interactive , tty , detach) --name " container name ( all u can use it name )" " iamge " 
+if image use port :
+docker container run -itd (interactive , tty , detach) --name " container name ( all u can use it name )" --privileged --publish "#app port : #port ( like for nginx i can write 80:80 or 80 :1000 )" " iamge " 
+if need fource go to bash :
+docker container run -itd (interactive , tty , detach) --name " container name ( all u can use it name )" " iamge "  /bin/sh or /bin/bash 
+or you can use execute after up container :
+docker container exec -it " container name " /bin/bash or /bin/sh an ...
+other commands :
+docker container ls
+docker image ls
+docker container top " container name"
+docker container stats "container  name"
+docker contianer inspect "container name"
+for remove and stop/start coontainer :
+docker container start/stop " container name"
+docker contianer stop -t (times set for stop) "container name"
+docker container prune (should all continaers is stop)
+docker container kill 
+docker contianer rm "contianer name "( should first stop container )
+docker container rm -f (fource) "container name"
+docker image rm "image name"
