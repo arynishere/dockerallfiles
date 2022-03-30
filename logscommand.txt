@@ -1,0 +1,8 @@
+docker container logs "name container"
+docker container inspect "name container"
+===========================================
+docker container top "name container"
+docker container stats "name contaienr"
+====================================
+filebeat -----> logstash -------> elastic ------> kibana 
+===================================================
