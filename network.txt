@@ -1,0 +1,6 @@
+docker network create --driver=bridge --subnet=x.x.x.x/24 --gateway=x.x.x.y "network name"
+docker network ls
+docker network inspect "network name"
+docker network rm "network name"
+docker network connect/disconnect "network name" "container name"
+docker network create "network name " =====> just create bridge network type 
