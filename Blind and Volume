@@ -1,0 +1,3 @@
+docker volume create/prune/rm/inspect 
+docker container run -itd --name="container name" --mount source="name or Directory",target="Directory in container" image:tag
+docker container run -itd --name="container name" --mount type=bind,source="name or Directory",target="Directory in container" image:tag
