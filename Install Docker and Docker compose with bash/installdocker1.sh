@@ -69,7 +69,7 @@ sleep 1
 
 	sleep 3 
 elif [[ $ans == n ]];then
-    echo -e "allreight"
+    echo -e "all right"
 else 
 echo " please enter y or n (yes or no) "
 fi
