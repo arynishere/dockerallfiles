@@ -1,5 +1,5 @@
 #/bin/bash
-echo -e " Do you want install Docker or Docker-compose or both  ? (just install docker you should write name like docker,docker-compose) "
+echo -e " Do you want install Docker or Docker-compose or both  ? (just install docker you should write name like docker,docker-compose or both type DD ) "
 read ans
 if [[ $ans == docker ]];then
     echo " enjoy :)"
