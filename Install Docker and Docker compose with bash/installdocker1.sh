@@ -4,7 +4,7 @@ read ans
 if [[ $ans == docker ]];then
     echo " enjoy :)"
     sleep 2
-    rm -rf /etc/resolv.conf
+    mv /etc/resolv.conf resolv.txt
     cp ./resolv.conf /etc/
     sudo apt-get remove docker docker-engine docker.io containerd runc -y
 
@@ -66,7 +66,12 @@ sleep 1
 	docker-compose --version
 
 	echo " Installation completed (compose) "
-
+       
+        rm /etc/resolv.conf       
+        
+        mv /etc/resolv.txt resolv.conf
+        
+        
 	sleep 3 
 elif [[ $ans == n ]];then
     echo -e "all right"
